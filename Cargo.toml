@@ -1,0 +1,21 @@
+[package]
+name = "sea_orm_utils"
+version = "0.1.0"
+authors = ["Matthew Haynes"]
+edition = "2021"
+description = "(Unofficial) utilities for SeaORM."
+license = "MIT"
+# documentation = "https://docs.rs/sea-orm-utils"
+repository = "https://github.com/matthewhaynesonline/sea-orm-utils"
+readme = "README.md"
+categories = ["database"]
+keywords = ["async", "orm", "mysql", "postgres", "sqlite"]
+
+[lib]
+name = "sea_orm_utils"
+path = "src/lib.rs"
+
+[dependencies]
+chrono = "0.4.9"
+sea-orm = { version = "1.1.5", features = ["runtime-tokio-native-tls"] }
+uuid = { version = "1.14.0", features = ["v4"] }
